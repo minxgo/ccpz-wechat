@@ -1,0 +1,52 @@
+"pages": [
+
+/** 已完成 ************************************************************/
+//优惠券和咖啡钱包
+    "pages/coupon/coupon/coupon",       //优惠券
+
+//订单
+    "pages/order/list/list",        //订单列表  //各种订单状态
+    "pages/order/detail/detail",    //订单完成详情页
+    "pages/order/qrcode/qrcode",        //取餐码
+    "pages/order/confirm/confirm",      //购物车订单下单页 
+    "pages/order/remark/remark",        //订单下单页备注页
+    "pages/order/selectcoffeewallet/selectcoffeewallet",  //选择
+    "pages/order/usecoffeewallet/usecoffeewallet",  //使用
+
+//首页
+    "pages/index/cart/cart",        //购物车   //删除和统计
+    "pages/index/login/login",      //登录
+    "pages/index/home/home",        //首页
+    "pages/index/menu/menu",        //菜单列表  //地址配送
+
+//个人中心
+    "pages/member/center/center",   //个人中心
+    "pages/member/supplement/supplement",   //完善资料 //男女切换
+    "pages/member/info/info",   //资料详情
+
+//协议
+    "pages/agreement/pay/pay",          //支付协议
+    "pages/agreement/member/member",    //会员协议
+
+//地址相关
+    "pages/member/addresslist/addresslist", //收货地址列表
+    "pages/member/addressedit/addressedit",  //添加收货地址
+    "pages/address/select/select",      //选择收货地址
+    "pages/address/city/city",  //城市选择
+    "pages/member/addresssearch/addresssearch", //位置定位
+
+
+/** 其他 ************************************************************/
+
+//咖啡钱包
+    "pages/coupon/wallet/wallet",       //咖啡钱包
+    "pages/coupon/walletdetail/walletdetail",   //咖啡优惠券详情页
+    "pages/coupon/walletbuy/walletbuy",     //咖啡优惠券购买页
+    "pages/coupon/walletorderconfirm/walletorderconfirm",   //确认订单 //总计
+    "pages/coupon/walletorderresult/walletorderresult",     //支付结果
+
+//邀请
+    "pages/index/inviter/inviter",  //邀请
+    "pages/member/invitationpeople/invitationpeople",
+
+],

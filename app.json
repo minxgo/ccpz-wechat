@@ -1,14 +1,79 @@
 {
-  "pages":[
-    "pages/posts/post",
-    "pages/posts/post-detail/post-detail",
-    "pages/index/index",
+  "pages": [
+    "pages/index/login",
+    "pages/index/menu",
+    "pages/index/cart",
+    "pages/index/home",
+
+    "pages/member/coupon",
+    "pages/member/supplement",
+    "pages/member/info",
+    "pages/member/center",
+    "pages/member/addressedit",
+    "pages/member/addresslist",
+
+
+    "pages/address/city",
+    "pages/address/select",
+    
+    "pages/member/addresssearch",
+
+    "pages/order/detail",
+    "pages/order/qrcode",
+    "pages/order/remark",
+    "pages/order/confirm",
+    "pages/order/list",
+
+    "pages/agreement/member",
+    "pages/agreement/pay",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#405f80",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"#ffffff"
+  "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#fff",
+      "navigationBarTitleText": "sssss coffee",
+      "navigationBarTextStyle": "black",
+      "enablePullDownRefresh": false,
+      "backgroundColor": "#fff"
+  },
+  "tabBar": {
+      "color": "#2A4C7E",
+      "selectedColor": "#2A4C7E",
+      "backgroundColor": "#fff",
+      "list": [
+          {
+              "text": "首页",
+              "pagePath": "pages/index/home",
+              "iconPath": "resources/images/index/index_blur.png",
+              "selectedIconPath": "resources/images/index/index_focus.png"
+          },
+          {
+              "text": "菜单",
+              "pagePath": "pages/index/menu",
+              "iconPath": "resources/images/index/list_blur.png",
+              "selectedIconPath": "resources/images/index/list_focus.png"
+          },
+          {
+              "text": "订单",
+              "pagePath": "pages/order/list",
+              "iconPath": "resources/images/index/order_blur.png",
+              "selectedIconPath": "resources/images/index/order_focus.png"
+          },
+          {
+              "text": "购物车",
+              "pagePath": "pages/index/cart",
+              "iconPath": "resources/images/index/cart_blur.png",
+              "selectedIconPath": "resources/images/index/cart_focus.png"
+          },
+          {
+              "text": "我的",
+              "pagePath": "pages/member/center",
+              "iconPath": "resources/images/index/my_blur.png",
+              "selectedIconPath": "resources/images/index/my_focus.png"
+          }
+      ]
+  },
+  "networkTimeout": {
+      "request": 15000
   }
 }

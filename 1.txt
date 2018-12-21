@@ -1,0 +1,46 @@
+描述
+<view class="sub-box" wx:if="{{item.kindDesc}}">
+    <text class="subtitle" wx:if="{{item.kindDescIsOnSale}}">
+        <text class="colored">123</text>
+        <text wx:if="{{item.kindDescOnSaleRest}}"> / 456</text>
+    </text>
+    <text class="subtitle" wx:elif="{{!item.displayedIconUrl&&!item.kindDescIsOnSale}}">{{item.kindDesc}}</text>
+</view>
+
+<image class="title-icon" mode="aspectFit" src="{{item.displayedIconUrl}}" wx:if="{{item.displayedIconUrl&&!item.kindDescIsOnSale}}"></image>
+
+剩余
+<label class="product-limit" wx:if="{{product.stockSurplusAmount&&product.stockSurplusAmount>0}}">剩<text class="num-red">{{product.stockSurplusAmount}}</text>{{product.unit}}</label>
+
+换口味
+<text class="product-select" wx:if="{{product.standardMulti==1&&product.standard.length>1}}">换口味</text>
+
+
+<view class="radioWrap">
+    <view class="radio {{item.radio?'checked':''}}" data-index="{{index}}" data-radio="{{item.radio}}" id="{{item.code}}" wx:if="{{radioDisplay}}"></view>
+</view>
+radioDisplay:radioDisplay
+radioDisplay: !1, // 视频？
+bindtap="radioIsChecked" data-radio="{{item.radio}}"
+
+优惠券 保存按钮
+<view class="saveWrapBlock" wx:if="{{couponAvailable}}"></view>
+<view class="saveWrap {{isIpx?'fix-iphonex-bottom':''}}" wx:if="{{couponAvailable}}">
+    <view bindtap="saveData" class="save" id="save">保存</view>
+</view>
+
+
+<view class="bubble" wx:if="{{{{showBubble&&pressCouponId==item.couponId&&!item.isGift}}}}">
+    <view class="bubble-bg"></view>
+    <view class="bubble-count">{{pressInitAmount}}</view>
+</view>
+
+
+
+name
+code: 
+checked: 1
+isInventory
+
+
+/resources/images/index/good_test.png
