@@ -39,8 +39,8 @@ Page({
     windowWidth: "",
     radio: "",
     calcHeight: '', //左侧列表高度
-    addressSentHeight: 140,   //外送元素高度
-    addressPickHeight: 140,   //自提元素高度
+    addressSentHeight: 160,   //外送元素高度
+    addressPickHeight: 160,   //自提元素高度
     bannerHeight: 240,
     bannerHeightDefault: 240,
     contentHeight: '', //右侧菜单内容高度
@@ -74,10 +74,10 @@ Page({
     var that = this;
     wx.createSelectorQuery().select("#fixed-helper").boundingClientRect(function (e) {
       that.setData({
-        contentHeight: e.height - 120 - 70
+        contentHeight: e.height - 120 - 80
       });
-      console.log(e.height)
-      console.log(that.data.contentHeight)
+      console.log("totalHeight" + e.height)
+      console.log("contentHeight" + that.data.contentHeight)
 
     }).exec();
     
@@ -86,7 +86,7 @@ Page({
   gotoSelectAddress: function() { //跳转选择地址
     var deil = this.data.delivery;
     wx.navigateTo({
-      url: '/pages/address/select/select?deil='+deil
+      url: '/pages/address/select?deil='+deil
     })
   },
 

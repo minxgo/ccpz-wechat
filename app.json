@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/index/login",
     "pages/index/menu",
-    "pages/index/cart",
     "pages/index/home",
+    "pages/index/login",
+    "pages/index/cart",
 
     "pages/member/coupon",
     "pages/member/supplement",
@@ -11,7 +11,6 @@
     "pages/member/center",
     "pages/member/addressedit",
     "pages/member/addresslist",
-
 
     "pages/address/city",
     "pages/address/select",
@@ -31,7 +30,7 @@
   "window": {
       "backgroundTextStyle": "light",
       "navigationBarBackgroundColor": "#fff",
-      "navigationBarTitleText": "sssss coffee",
+      "navigationBarTitleText": "ccpz coffee",
       "navigationBarTextStyle": "black",
       "enablePullDownRefresh": false,
       "backgroundColor": "#fff"
